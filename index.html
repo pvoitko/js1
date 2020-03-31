@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<script type="text/javascript"></script>
+
+<style>
+
+    form{
+        font-size: 2em;
+        align-content: center;;
+    }
+    input{
+        font-size: 15px;
+        background-color: lightgray; 
+        color:black;
+        padding: 5px;
+        margin: 5px;
+    }
+    html {
+    background: #000 url(https://i.gifer.com/DEC2.gif) ; /* Путь к графическому файлу с фоном */
+    height: 100%; /* Высота веб-страницы */
+    color: #fff; /* Белый цвет текста */
+   }
+</style>
+
+<body>
+
+<FORM>
+    <input TYPE="button" VALUE="завадння 1" ONCLICK="task1()">
+    <script>
+    function task1()
+    {
+        var person = prompt("Please enter your name");
+if(person=="")
+{
+    person = prompt("Please correct enter your name");
+    alert("hello, " + person);
+
+}
+else
+alert("hello, " + person);
+    }
+    </script>
+    </FORM>
+
+
+<FORM>
+    <input TYPE="button" VALUE="завадння 2" ONCLICK="task2()">
+    <script>
+    function task2()
+    {
+        
+var age = prompt("Please enter your year of birthday");
+alert("Your age is " + Number(2020-age));
+
+ 
+    }
+    </script>
+    </FORM>
+    
+  
+
+
+<FORM>
+    <input TYPE="button" VALUE="завадння 3" ONCLICK="task3()">
+    <script>
+    function task3()
+    {
+
+var p = prompt("Введите длину стороны квадрата");
+if(p<=0)
+{
+    alert("Длина стороны не может быть меньше и ровно 0")
+    p = prompt("Введите правильную длину стороны квадрата");
+    alert("Периметр квадрата = " + Number(4 *p));
+}
+else
+alert("Периметр квадрата = " + Number(4 *p));
+
+    }
+    </script>
+    </FORM>
+
+
+<FORM>
+    <input TYPE="button" VALUE="завадння 4" ONCLICK="task4()">
+    <script>
+    function task4()
+    {
+        var r = prompt("Введите радиус окружности");
+    if(r<=0)
+{
+    alert("радиус окружности не может быть меньше и ровно 0")
+    r = prompt("Введите правильный радиус окружности");
+    alert("Площадь окружности ровно = " + Number(3.1415 * (r*r)));
+}
+else
+    alert("Площадь окружности ровно = " + Number(3.1415 * (r*r)));
+    }
+    </script>
+    </FORM>
+    
+  
+    
+<script>
+    
+
+</script>
+
+<FORM>
+    <input TYPE="button" VALUE="завадння 5" ONCLICK="task5()">
+    <script>
+    function task5()
+    {
+        var road = prompt("Введите расстояние в км межу двумя городами");
+    var time= prompt("Введите за сколько часов вы хотите добраться");
+    if(road<=0 && time<=0)
+    {
+        promt("Ошибка!Данные не могут быть меньше или ровно 0")
+        var road = prompt("Введите корректное расстояние в км межу двумя городами");
+        var time= prompt("Введите корректное ко-во часов за которое вы хотите добраться");
+
+        alert("Вам нужно двигаться со скоростью = " + Number(road/time) + " км/час"+ ", что бы успеть вовремя");
+    }
+    else
+    alert("Вам нужно двигаться со скоростью = " + Number(road/time) + " км/час"+ ", что бы успеть вовремя");
+    }
+    </script>
+    </FORM>
+    
+
+<FORM>
+    <input TYPE="button" VALUE="завадння 6" ONCLICK="task6()">
+    <script>
+    function task6()
+    {
+const  euro= 0.90;
+    var dollar= prompt("Введите долары, которые хотите перевести в эвро");
+    if(dollar<=0)
+    {
+        alert("Ошибка ввода!!Данные не могут быть меньше или ровно 0")
+        dollar= prompt("Введите долары, которые хотите перевести в эвро");
+        alert(dollar + " $ = " +  Number(dollar*euro) + " эвро ");
+    }
+    else
+    alert(dollar + " $ = " +  Number(dollar*euro) + " эвро ");
+    }
+    </script>
+    </FORM>
+    
+
+<FORM>
+    <input TYPE="button" VALUE="завадння 7" ONCLICK="task7()">
+    <script>
+    function task7()
+    {
+        var fleshka = prompt("Введите обьем флешки в Гб");
+    const file = 820;
+    var mb=fleshka*1024;
+    if(fleshka<=0)
+    { 
+        alert("Ошибка ввода!!Данные не могут быть меньше или ровно 0");
+        var fleshka = prompt("Введите корректный обьем флешки в Гб");
+        const file = 820;
+         var mb=fleshka*1024;
+         alert("В флешку может поместиться " + Math.floor(Number (mb/file)) + " програм/ы/а обьемом 820 мб");
+    }
+    else
+    alert("В флешку может поместиться " + Math.floor(Number (mb/file)) + " програм/ы/а обьемом 820 мб");
+    }
+    </script>
+    </FORM>
+    
+    
+<FORM>
+    <input TYPE="button" VALUE="завадння 8" ONCLICK="task8()">
+    <script>
+    function task8()
+    {
+        var money=prompt("Введите сумму денег в вашем кошельке");
+    var cholocate = prompt("Введите цену одной шоладки");
+    if(money<=0&&cholocate<=0)
+    {
+        alert("Ошибка ввода!!Данные не могут быть меньше или ровно 0");
+        var money=prompt("Введите сумму денег в вашем кошельке");
+    var cholocate = prompt("Введите цену одной шоладки");
+    alert("Вы сможете купить " +Math.floor(Number(money/cholocate)) + " шоколадок. И у вас останется " + Number(money%cholocate) + " грн ");
+    }
+    else
+    alert("Вы сможете купить " +Math.floor(Number(money/cholocate)) + " шоколадок. И у вас останется " + Number(money%cholocate) + " грн ");
+    }
+    </script>
+    </FORM>
+
+    
+<FORM>
+    <input TYPE="button" VALUE="завдання 9" ONCLICK="task9()">
+    <script>
+    function task9()
+    {
+        var num=prompt("Введите 3-х значное число");
+    if(num<=99||num>=999)
+    {
+        alert("ОШибка!Вы ввели не 3-х знанчое число.")
+        var num=prompt("Введите 3-х значное число");
+        var a=Math.floor(Number(num/100));
+    var b=Math.floor(Number(num%100/10));
+    var c=Math.floor(Number(num%10));
+    alert("Обратное число = " + c +""+  b+ "" + a);
+    }
+    else
+    var a=Math.floor(Number(num/100));
+    var b=Math.floor(Number(num%100/10));
+    var c=Math.floor(Number(num%10));
+    alert("Обратное число = " + c +""+  b+ "" + a);
+    }
+    </script>
+    </FORM>
+    
+
+<FORM>
+    <input TYPE="button" VALUE="завдання 10" ONCLICK="task10()">
+    <script>
+    function task10()
+    {
+   var number = prompt("Введите целое число");
+if(number<=0)
+{
+    alert("Ошибка ввода!!Данные не могут быть меньше или ровно 0");
+    var number = prompt("Введите целое число");
+    if(number%2==0)
+ alert("Четное");
+ else
+ alert("Нечетное");
+}
+else
+if(number%2==0)
+ alert("Четное");
+ else
+ alert("Нечетное");
+
+    }
+    </script>
+    </FORM>
+    
+
+</body>
+</html>
